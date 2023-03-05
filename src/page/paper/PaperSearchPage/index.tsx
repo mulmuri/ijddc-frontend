@@ -3,13 +3,13 @@ import React, { useState } from "react";
 import { useRecoilValue } from "recoil";
 import API from "../../../api/api";
 import ArticleSummaryBox from "../../../component/ArticleSummaryBox";
-import FalsePagination from "../../../component/FalsePagination";
+import FalsePagination from "../../../component/Pagination";
 import FlexBox from "../../../component/FlexBox";
 import PageHeader from "../../../component/PageHeader";
 import SearchBar from "../../../component/SearchNavigation/SearchBar/SearchBar";
 import StatusSelector from "../../../component/SearchNavigation/StatusSelector/StatusSelector";
 import TypeSelector from "../../../component/SearchNavigation/TypeSelector/TypeSelector";
-import publicPaperListState from "../../../store/PublicPaperList";
+import { publicPaperListArrangedState, publicPaperListNoState } from "../../../store/PublicPaperList";
 
 
 
@@ -35,7 +35,8 @@ interface PaperSearchInfo {
 
 const PaperSearchPage = ({keyword, bookno, status}: PaperSearchValue) => {
 
-  const PaperList = useRecoilValue(publicPaperListState);
+  const paperListArranged = useRecoilValue(publicPaperListArrangedState);
+  const paperListNo = useRecoilValue(publicPaperListNoState);
 
   const typelist = [
     { name: "제목" },
@@ -60,15 +61,11 @@ const PaperSearchPage = ({keyword, bookno, status}: PaperSearchValue) => {
         />
       </FlexBox>
 
-      {PaperList.map((paper, index) => 
+      {paperListArranged.at(paperListNo)?.map((paper, index) => 
       <React.Fragment key={index}>
-        <Divider variant="middle" >
-          Center
-        </Divider>
+        <Divider variant="middle" sx={{margin: 0, padding: 0}}/>
         <ArticleSummaryBox {...paper}/>
-      </React.Fragment>
-      )
-      }
+      </React.Fragment>)}
 
       <FalsePagination/>
     </>

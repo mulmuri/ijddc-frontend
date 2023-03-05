@@ -1,7 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 
-import MainFooter from "./page/layout/MainFooter/MainFooter"
-import MainHeader from "./page/layout/MainHeaderOld/Main"
+import MainFooter from "./page/layout/MainFooter"
+import MainHeader from "./page/layout/MainHeader"
 import { ThemeProvider } from '@mui/material'
 import { mainTheme } from './style/theme/mainTheme'
 import MainRouter from './page/Router'

@@ -4,7 +4,6 @@ export interface LinkProps {
 }
 
 
-export interface TabProps {
-  title: LinkProps;
+export interface TabProps extends LinkProps{
   index: LinkProps[];
 }

@@ -8,12 +8,11 @@ export interface PageHeaderProps {
 }
 
 const PageHeaderStyle = styled(Box)({
-  height: 200,
+  height: 160,
   textAlign: 'center',
   justifyContent: 'center',
   display: 'flex',
   alignItems: 'center'
-  //align-items: center;
 })
 
 

@@ -1,5 +1,14 @@
 
 
+/*
+image
+title
+author
+
+
+
+*/
+
 
 const PaperSummaryBox = () => {
   return (

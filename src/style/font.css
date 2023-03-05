@@ -1,4 +1,9 @@
 @font-face {
-  font-family: "GothicA1-Black";
-  src: url("../asset/font/GothicA1-Black.ttf"); 
+  font-family: "OpenSans";
+  src: url("../asset/font/OpenSans-VariableFont_wdth,wght.ttf"); 
+}
+
+@font-face {
+  font-family: "OpenSans-italic";
+  src: url("../asset/font/OpenSans-Italic-VariableFont_wdth,wght.ttf"); 
 }

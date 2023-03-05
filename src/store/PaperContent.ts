@@ -1,4 +1,4 @@
-import { atom } from "recoil";
+import { atom, selector } from "recoil";
 import { PaperContentDummy } from "../dummyData/PaperContent";
 
 
@@ -30,10 +30,15 @@ export interface PaperContentProps {
   tag: string[];
 }
 
+export const PaperContentNoState = atom({
+  key: 'PaperContentNoState',
+  default: 0
+})
 
-const PaperContentState = atom({
+export const PaperContentState = atom({
   key: 'PaperContentState',
   default: PaperContentDummy
 })
 
-export default PaperContentState
+
+

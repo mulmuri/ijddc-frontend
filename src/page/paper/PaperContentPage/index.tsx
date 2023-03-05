@@ -2,7 +2,7 @@ import { useRecoilValue } from "recoil";
 import InlineDivider from "../../../component/Divider/InlineDivider";
 import OutlineDivider from "../../../component/Divider/LargeDivider";
 import PageHeader from "../../../component/PageHeader";
-import PaperContentState from "../../../store/PaperContent";
+import { PaperContentState } from "../../../store/PaperContent";
 
 
 

@@ -28,13 +28,40 @@ const RoleCardContainer = styled(Box)({
   flexDirection: 'row',
   gap: '2rem',
 })
-
+/*
 const RoleCardStyle = styled(motion.div)({
   width: '100%',
   height: 200,
   display: 'flex',
   border: 'black 1px solid'
 })
+*/
+
+const RoleCardStyle = styled(motion.div)`
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  cursor: pointer;
+
+  h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+
+  p {
+    margin: 0;
+    color: #888;
+  }
+`;
 
 
 
@@ -43,14 +70,12 @@ const RoleCard = ({title, desc, to}: RoleCardProps) => {
 
   return (
     <RoleCardStyle
-      //elevation={13}
       onClick={() => navigate(to)}
-      whileHover={{
-        scale: 1.2,
-        transition: { duration: 0.2, type: 'ease' },
-      }}
+      whileHover={{ y: -5, boxShadow: "0 8px 20px rgba(0, 0, 0, 0.2)" }}
+      transition={{ type: "spring", stiffness: 300 }}
     >
-      {title}
+      <h2>{title}</h2>
+      <p>{desc}</p>
     </RoleCardStyle>
   )
 }
