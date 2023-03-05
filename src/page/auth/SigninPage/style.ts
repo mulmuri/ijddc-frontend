@@ -4,7 +4,6 @@ import { Box, Container, Typography } from "@mui/material";
 
 export const Frame = styled(Container)({
   height: '500px',
-  marginTop: '50px'
 });
 
 Frame.defaultProps = {
