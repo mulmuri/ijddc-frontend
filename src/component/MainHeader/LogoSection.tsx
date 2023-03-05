@@ -3,6 +3,9 @@ import styled from "@emotion/styled";
 const StyledImage = styled.img`
   width: 216px;
   height: 72px;
+  margin: 12px;
+  position: absolute;
+  left: 0px;
 `
 
 const LogoSection = () => {

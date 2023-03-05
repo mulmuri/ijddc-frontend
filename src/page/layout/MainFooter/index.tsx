@@ -1,6 +1,7 @@
 import { Box, styled, ThemeProvider, Typography } from "@mui/material";
 import { footerTheme } from "../../../style/theme/footerTheme";
-import { FooterInfoList } from "./FooterInfo";
+import { FooterInfoList } from "./info";
+import { StyledFooter, StyledFooterBox } from "./style";
 
 
 
@@ -17,19 +18,6 @@ export interface FooterBoxProps {
 
 
 
-const StyledFooter = styled(Box)({
-  width: "100%",
-  height: 200,
-  backgroundColor: '#F3F4F5',
-  display: 'inline-flex'
-
-})
-
-const StyledFooterBox = styled(Box)({
-  padding: 30,
-  margin: 5,
-  maxWidth: 700,
-})
 
 const MainFooter = () => {
   return (

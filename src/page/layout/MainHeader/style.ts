@@ -1,12 +1,14 @@
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 
 
 
-const HeaderTop = styled.div`
 
-`
+export const HeaderHeight = 96;
+export const HeaderBottomHeight = 60;
 
-const HeaderBottom = styled.div`
 
+export const HeaderFilling = styled.div`
+  width: 100%;
+  height: ${HeaderHeight}px;
 `

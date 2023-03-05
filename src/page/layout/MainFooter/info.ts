@@ -1,4 +1,4 @@
-import { FooterBoxProps } from "./MainFooter";
+import { FooterBoxProps } from ".";
 
 
 export const FooterInfoList: FooterBoxProps[] = [

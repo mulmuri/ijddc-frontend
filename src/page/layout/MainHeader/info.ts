@@ -1,12 +1,12 @@
 import { TabProps } from "../../../type/header";
 
+
+
 export const navInfoList: TabProps[] =
 [
   {
-    title: {
-      text: "About Journal",
-      link: "about-journal"
-    },
+    text: "About Journal",
+    link: "about-journal",
     index: [
       {
         text: "About Us",
@@ -25,10 +25,8 @@ export const navInfoList: TabProps[] =
   },
 
   {
-    title: {
-      text: "Paper",
-      link: "paper"
-    },
+    text: "Paper",
+    link: "paper",
     index: [
       {
         text: "Index",
@@ -44,10 +42,8 @@ export const navInfoList: TabProps[] =
   },
 
   {
-    title: {
-      text: "My Paper",
-      link: "paper"
-    },
+    text: "My Paper",
+    link: "paper",
     index: [
       {
         text: "Index",
